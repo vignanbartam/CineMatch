@@ -51,7 +51,7 @@ movies_dict = pickle.load(open('movie_dict.pkl','rb'))
 movies =pd.DataFrame(movies_dict)
 
 
-st.title('Movie Recommendation System')
+st.title('Cine Match')
 
 select_movie_name = st.selectbox(
     'Enter your movie name', movies['title'].values
@@ -81,4 +81,5 @@ if button_ph.button('Recommend'):
    
 
     
+
  
